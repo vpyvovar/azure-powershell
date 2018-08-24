@@ -473,6 +473,14 @@
     <Compile Include="VirtualNetworkRule\Model\AzureSqlServerVirtualNetworkRuleModel.cs" />
     <Compile Include="VirtualNetworkRule\Services\AzureSqlServerVirtualNetworkRuleAdapter.cs" />
     <Compile Include="VirtualNetworkRule\Services\AzureSqlServerVirtualNetworkRuleCommunicator.cs" />
+    <Compile Include="InterfaceEndpointProfile\Cmdlet\AzureSqlServerInterfaceEndpointProfileCmdletBase.cs" />
+    <Compile Include="InterfaceEndpointProfile\Cmdlet\GetAzureSqlServerInterfaceEndpointProfile.cs" />
+    <Compile Include="InterfaceEndpointProfile\Cmdlet\NewAzureSqlServerInterfaceEndpointProfile.cs" />
+    <Compile Include="InterfaceEndpointProfile\Cmdlet\RemoveAzureSqlServerInterfaceEndpointProfile.cs" />
+    <Compile Include="InterfaceEndpointProfile\Cmdlet\SetAzureSqlServerInterfaceEndpointProfile.cs" />
+    <Compile Include="InterfaceEndpointProfile\Model\AzureSqlServerInterfaceEndpointProfileModel.cs" />
+    <Compile Include="InterfaceEndpointProfile\Services\AzureSqlServerInterfaceEndpointProfileAdapter.cs" />
+    <Compile Include="InterfaceEndpointProfile\Services\AzureSqlServerInterfaceEndpointProfileCommunicator.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -484,7 +492,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.Azure.Management.Sql, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\packages\Microsoft.Azure.Management.Sql.1.18.0-preview\lib\net452\Microsoft.Azure.Management.Sql.dll</HintPath>
+      <HintPath>C:\Users\amagarwa\azure-sdk-for-net\src\SDKs\SqlManagement\Management.Sql\bin\Debug\net452\Microsoft.Azure.Management.Sql.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Azure.Management.Storage">

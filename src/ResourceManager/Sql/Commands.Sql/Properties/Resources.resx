@@ -375,6 +375,15 @@
   <data name="ServerVirtualNetworkRuleNameExists" xml:space="preserve">
     <value>Virtual Network Rule with name: '{0}' already exists for server '{1}'</value>
   </data>
+  <data name="RemoveAzureSqlServerInterfaceEndpointProfileDescription" xml:space="preserve">
+    <value>Permanently removing Virtual Network Rule '{0}' for Azure Sql Server '{1}'</value>
+  </data>
+  <data name="RemoveAzureSqlServerInterfaceEndpointProfileWarning" xml:space="preserve">
+    <value>Are you sure you want to remove the Virtual Network Rule '{0}' for Azure Sql Server '{1}'?</value>
+  </data>
+  <data name="ServerInterfaceEndpointProfileNameExists" xml:space="preserve">
+    <value>Virtual Network Rule with name: '{0}' already exists for server '{1}'</value>
+  </data>
   <data name="SetAzureSqlServerTransparentDataEncryptionProtectorWarning" xml:space="preserve">
     <value>Warning: This command sets the key '{0}' as the protector, removing access to this key in the future may result in data loss on this server. Learn about best practices at aka.ms/sqltdewithbyok. Do you want to proceed?</value>
   </data>

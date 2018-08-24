@@ -352,6 +352,15 @@ function Get-VirtualNetworkRuleName
 
 <#
 .SYNOPSIS
+Gets valid interface endpoint profile name
+#>
+function Get-InterfaceEndpointProfileName
+{
+    return getAssetName
+}
+
+<#
+.SYNOPSIS
 Gets valid server dns alias name
 #>
 function Get-ServerDnsAliasName

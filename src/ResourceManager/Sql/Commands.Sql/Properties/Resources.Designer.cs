@@ -594,6 +594,24 @@ namespace Microsoft.Azure.Commands.Sql.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Permanently removing Virtual Network Rule &apos;{0}&apos; for Azure Sql Server &apos;{1}&apos;.
         /// </summary>
+        internal static string RemoveAzureSqlServerInterfaceEndpointProfileDescription {
+            get {
+                return ResourceManager.GetString("RemoveAzureSqlServerInterfaceEndpointProfileDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to remove the Virtual Network Rule &apos;{0}&apos; for Azure Sql Server &apos;{1}&apos;?.
+        /// </summary>
+        internal static string RemoveAzureSqlServerInterfaceEndpointProfileWarning {
+            get {
+                return ResourceManager.GetString("RemoveAzureSqlServerInterfaceEndpointProfileWarning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Permanently removing Virtual Network Rule &apos;{0}&apos; for Azure Sql Server &apos;{1}&apos;.
+        /// </summary>
         internal static string RemoveAzureSqlServerVirtualNetworkRuleDescription {
             get {
                 return ResourceManager.GetString("RemoveAzureSqlServerVirtualNetworkRuleDescription", resourceCulture);
@@ -768,6 +786,15 @@ namespace Microsoft.Azure.Commands.Sql.Properties {
         internal static string ServerFirewallRuleNameExists {
             get {
                 return ResourceManager.GetString("ServerFirewallRuleNameExists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtual Network Rule with name: &apos;{0}&apos; already exists for server &apos;{1}&apos;.
+        /// </summary>
+        internal static string ServerInterfaceEndpointProfileNameExists {
+            get {
+                return ResourceManager.GetString("ServerInterfaceEndpointProfileNameExists", resourceCulture);
             }
         }
         
