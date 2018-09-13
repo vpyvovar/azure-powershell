@@ -22,7 +22,7 @@ namespace Microsoft.Azure.Commands.Sql.InterfaceEndpointProfile.Cmdlet
     /// <summary>
     /// Defines the Remove-AzureRmSqlServerInterfaceEndpointProfile cmdlet
     /// </summary>
-    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlServerInterfaceEndpointProfile", SupportsShouldProcess = true, ConfirmImpact = ConfirmImpact.Medium),OutputType(typeof(Model.AzureSqlServerInterfaceEndpointProfileModel))]
+    [Cmdlet("Remove", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlServerInterfaceEndpointProfile", SupportsShouldProcess = true),OutputType(typeof(Model.AzureSqlServerInterfaceEndpointProfileModel))]
     public class RemoveAzureSqlServerInterfaceEndpointProfile : AzureSqlServerInterfaceEndpointProfileCmdletBase
     {
         /// <summary>

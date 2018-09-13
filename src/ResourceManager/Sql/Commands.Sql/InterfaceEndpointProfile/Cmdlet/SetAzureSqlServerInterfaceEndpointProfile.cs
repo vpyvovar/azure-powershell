@@ -21,7 +21,7 @@ namespace Microsoft.Azure.Commands.Sql.InterfaceEndpointProfile.Cmdlet
     /// <summary>
     /// Defines the Set-AzureRmSqlServerInterfaceEndpointProfile cmdlet
     /// </summary>
-    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlServerInterfaceEndpointProfile", SupportsShouldProcess = true, ConfirmImpact = ConfirmImpact.Medium),OutputType(typeof(Model.AzureSqlServerInterfaceEndpointProfileModel))]
+    [Cmdlet("Set", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlServerInterfaceEndpointProfile", SupportsShouldProcess = true),OutputType(typeof(Model.AzureSqlServerInterfaceEndpointProfileModel))]
     public class SetAzureSqlServerInterfaceEndpointProfile : AzureSqlServerInterfaceEndpointProfileCmdletBase
     {
         /// <summary>

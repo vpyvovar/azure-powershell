@@ -22,7 +22,7 @@ namespace Microsoft.Azure.Commands.Sql.InterfaceEndpointProfile.Cmdlet
     /// <summary>
     /// Defines the New-AzureRmSqlServerInterfaceEndpointProfile cmdlet
     /// </summary>
-    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlServerInterfaceEndpointProfile", ConfirmImpact = ConfirmImpact.Low, SupportsShouldProcess = true),OutputType(typeof(Model.AzureSqlServerInterfaceEndpointProfileModel))]
+    [Cmdlet("New", ResourceManager.Common.AzureRMConstants.AzureRMPrefix + "SqlServerInterfaceEndpointProfile", SupportsShouldProcess = true),OutputType(typeof(Model.AzureSqlServerInterfaceEndpointProfileModel))]
     public class NewAzureSqlServerInterfaceEndpointProfile : AzureSqlServerInterfaceEndpointProfileCmdletBase
     {
         /// <summary>
