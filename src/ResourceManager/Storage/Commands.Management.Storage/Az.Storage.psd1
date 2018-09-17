@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '0.1.0'
+ModuleVersion = '0.2.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Core', 'Desktop'
@@ -30,7 +30,7 @@ CompanyName = 'Microsoft Corporation'
 Copyright = 'Microsoft Corporation. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = '[PowerShell .Net Core] Microsoft Azure PowerShell - Storage service management cmdlets for Azure Resource Manager.  Creates and manages storage accounts in Azure Resource Manager.'
+Description = 'Microsoft Azure PowerShell - Storage service management cmdlets for Azure Resource Manager in PowerShell and PowerShell Core.  Creates and manages storage accounts in Azure Resource Manager.'
 
 # Minimum version of the Windows PowerShell engine required by this module
 PowerShellVersion = '5.1'
@@ -42,7 +42,7 @@ PowerShellVersion = '5.1'
 # PowerShellHostVersion = ''
 
 # Minimum version of Microsoft .NET Framework required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
-# DotNetFrameworkVersion = ''
+DotNetFrameworkVersion = '4.7.2'
 
 # Minimum version of the common language runtime (CLR) required by this module. This prerequisite is valid for the PowerShell Desktop edition only.
 # CLRVersion = ''
@@ -51,10 +51,11 @@ PowerShellVersion = '5.1'
 # ProcessorArchitecture = ''
 
 # Modules that must be imported into the global environment prior to importing this module
-RequiredModules = @(@{ModuleName = 'Az.Profile'; ModuleVersion = '0.1.0'; })
+RequiredModules = @(@{ModuleName = 'Az.Profile'; ModuleVersion = '0.2.0'; })
 
 # Assemblies that must be loaded prior to importing this module
-RequiredAssemblies = '.\Microsoft.Azure.Management.Storage.dll'
+RequiredAssemblies = '.\Microsoft.Azure.Management.Storage.dll',
+                        '.\Microsoft.WindowsAzure.Storage.dll'
 
 # Script files (.ps1) that are run in the caller's environment prior to importing this module.
 # ScriptsToProcess = @()
@@ -67,8 +68,7 @@ FormatsToProcess = '.\Microsoft.Azure.Commands.Management.Storage.format.ps1xml'
     '.\Microsoft.WindowsAzure.Commands.Storage.format.ps1xml',  '.\Microsoft.WindowsAzure.Commands.Storage.generated.format.ps1xml'
 
 # Modules to import as nested modules of the module specified in RootModule/ModuleToProcess
-NestedModules = @('.\Microsoft.Azure.Commands.Management.Storage.dll', 
-    '.\Microsoft.WindowsAzure.Storage.dll', '.\Microsoft.WindowsAzure.Commands.Storage.dll')
+NestedModules = @('.\Microsoft.Azure.Commands.Management.Storage.dll', '.\Microsoft.WindowsAzure.Commands.Storage.dll')
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = @()
@@ -129,15 +129,27 @@ CmdletsToExport = 'Get-AzStorageAccount', 'Get-AzStorageAccountKey',
     'Update-AzStorageServiceProperty', 
     'Get-AzStorageServiceProperty', 
     'Enable-AzStorageDeleteRetentionPolicy', 
-    'Disable-AzStorageDeleteRetentionPolicy'
+    'Disable-AzStorageDeleteRetentionPolicy',
+    'Enable-AzStorageStaticWebsite', 
+    'Disable-AzStorageStaticWebsite',
+    'Get-AzRmStorageContainer',
+    'Update-AzRmStorageContainer',
+    'New-AzRmStorageContainer', 
+    'Remove-AzRmStorageContainer',
+    'Add-AzRmStorageContainerLegalHold',
+    'Remove-AzRmStorageContainerLegalHold',
+    'Set-AzRmStorageContainerImmutabilityPolicy',
+    'Get-AzRmStorageContainerImmutabilityPolicy',
+    'Remove-AzRmStorageContainerImmutabilityPolicy',
+    'Lock-AzRmStorageContainerImmutabilityPolicy'
 
 # Variables to export from this module
 # VariablesToExport = @()
 
 # Aliases to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no aliases to export.
-AliasesToExport = 'Get-AzureStorageContainerAcl', 'Start-CopyAzureStorageBlob', 
-    'Stop-CopyAzureStorageBlob', 'Enable-AzureStorageSoftDelete', 
-    'Disable-AzureStorageSoftDelete'
+AliasesToExport = 'Get-AzStorageContainerAcl', 'Start-CopyAzureStorageBlob', 
+    'Stop-CopyAzureStorageBlob', 'Enable-AzStorageSoftDelete', 
+    'Disable-AzStorageSoftDelete'
 
 # DSC resources to export from this module
 # DscResourcesToExport = @()
@@ -166,13 +178,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '* Add AssignIdentity setting support to resource mode storage account cmdlets
-    - New-AzureRmStorageAccount
-    - Set-AzureRmStorageAccount
-* Add Customer Key Support to resource mode storage account cmdlets
-    - Set-AzureRmStorageAccount
-    - New-AzureRmStorageAccountEncryptionKeySource
-'
+        ReleaseNotes = 'Initial Release with PowerShell and PowerShell Core Support'
 
         # Prerelease string of this module
         # Prerelease = ''

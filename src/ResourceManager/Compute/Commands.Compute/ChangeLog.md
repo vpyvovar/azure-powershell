@@ -19,6 +19,23 @@
         - Additional information about change #1
 -->
 ## Current Release
+
+## Version 5.6.0
+* Move dependencies on Keyvault and Storage to the common dependencies
+* Add support for more virutal machine sizes to AEM cmdlets
+* Add PublicIPPrefix parameter to New-AzureRmVmssIpConfig
+* Add ResourceId parameter to Invoke-AzureRmVMRunCommand cmdelt
+* Add Invoke-AzureRmVmssVMRunCommand cmdlet
+* Update the Compute client library to version 22.0.0
+
+## Version 5.5.2
+* Fixed the issue that target is missing in error output.
+* Fixed issue with storage account type for VM with managed disk
+* Fixed issue with default resource groups not being set.
+* Fix AEM Extension cmdlets for other environments, for example Azure China
+* Updated common runtime assemblies
+
+## Version 5.5.1
 * Fixed the issue that target is missing in error output.
 * Fixed issue with storage account type for VM with managed disk
 * Fixed issue with default resource groups not being set.
