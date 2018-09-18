@@ -117,6 +117,7 @@ namespace Microsoft.Azure.Commands.Sql.InterfaceEndpointProfile.Adapter
             InterfaceEndpointProfileName.InterfaceEndpointProfileName = resp.Name;
             InterfaceEndpointProfileName.VirtualNetworkSubnetId = resp.VirtualNetworkSubnetId;
             InterfaceEndpointProfileName.State = resp.State;
+            InterfaceEndpointProfileName.PrivateIp = resp.PrivateIp;
 
             return InterfaceEndpointProfileName;
         }

@@ -40,6 +40,11 @@ namespace Microsoft.Azure.Commands.Sql.InterfaceEndpointProfile.Model
         public string VirtualNetworkSubnetId { get; set; }
 
         /// <summary>
+        /// Gets or sets the private ip
+        /// </summary>
+        public string PrivateIp { get; set; }
+
+        /// <summary>
         /// Gets Interface Endpoint Profile state. Possible values include:
         /// 'Initializing', 'InProgress', 'Ready', 'Deleting', 'Unknown'
         /// </summary>

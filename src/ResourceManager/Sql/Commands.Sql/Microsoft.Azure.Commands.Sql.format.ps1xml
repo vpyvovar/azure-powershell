@@ -722,6 +722,10 @@
             <Width>15</Width>
           </TableColumnHeader>
           <TableColumnHeader>
+            <Label>PrivateIp</Label>
+            <Width>15</Width>
+          </TableColumnHeader>          
+          <TableColumnHeader>
             <Label>VirtualNetworkSubnetId</Label>
             <Width>120</Width>
           </TableColumnHeader>
@@ -742,6 +746,9 @@
               <TableColumnItem>
                 <PropertyName>State</PropertyName>
               </TableColumnItem>
+              <TableColumnItem>
+                <PropertyName>PrivateIp</PropertyName>
+              </TableColumnItem>              
               <TableColumnItem>
                 <PropertyName>VirtualNetworkSubnetId</PropertyName>
               </TableColumnItem>
